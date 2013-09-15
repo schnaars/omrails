@@ -1,4 +1,8 @@
 Omrails::Application.routes.draw do
+  devise_for :users
+
+  devise_for :installs
+
 # changed from welcome#index to pages#home (created in the page creation phase)
 get 'about' => 'pages#about'
 root :to => 'pages#home'
